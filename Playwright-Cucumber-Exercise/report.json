@@ -1,0 +1,438 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-feature;validate-the-login-page-title",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Validate the login page title",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 631614875
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open the \"https://www.saucedemo.com/\" page",
+            "match": {
+              "location": "steps/common.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 191043250
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see the title \"Swag Labs\"",
+            "match": {
+              "location": "steps/login.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6051958
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 114526290
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-feature;validate-login-error-message",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Validate login error message",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 513716958
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open the \"https://www.saucedemo.com/\" page",
+            "match": {
+              "location": "steps/common.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 191779541
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I will login as 'locked_out_user'",
+            "match": {
+              "location": "steps/login.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 88574791
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see the error message \"Epic sadface: Sorry, this user has been locked out.\"",
+            "match": {
+              "location": "steps/login.steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33957625
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 89553874
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login Feature",
+    "tags": [],
+    "uri": "features/login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "product-feature;validate-product-sort-by-price-price-(low-to-high)",
+        "keyword": "Scenario Outline",
+        "line": 12,
+        "name": "Validate product sort by price Price (low to high)",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 498984707
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open the \"https://www.saucedemo.com/\" page",
+            "match": {
+              "location": "steps/common.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 195631750
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I will login as 'standard_user'",
+            "match": {
+              "location": "steps/login.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 109236832
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I sort items by Price (low to high)",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I validate all items are sorted correctly by Price (low to high)",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 104335666
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "product-feature;validate-product-sort-by-price-price-(high-to-low)",
+        "keyword": "Scenario Outline",
+        "line": 13,
+        "name": "Validate product sort by price Price (high to low)",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 492817292
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open the \"https://www.saucedemo.com/\" page",
+            "match": {
+              "location": "steps/common.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 206503333
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I will login as 'standard_user'",
+            "match": {
+              "location": "steps/login.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 102886207
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I sort items by Price (high to low)",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I validate all items are sorted correctly by Price (high to low)",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 99971625
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "product-feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Product Feature",
+    "tags": [],
+    "uri": "features/product.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "purchase-feature;validate-successful-purchase-text",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Validate successful purchase text",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 484562833
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open the \"https://www.saucedemo.com/\" page",
+            "match": {
+              "location": "steps/common.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 226297541
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I will login as 'standard_user'",
+            "match": {
+              "location": "steps/login.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 107929082
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I will add the backpack to the cart",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I select the cart",
+            "match": {
+              "location": "steps/purchase.steps.ts:5"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I select Checkout",
+            "match": {
+              "location": "steps/purchase.steps.ts:9"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I fill in the First Name, Last Name, and Zip/Postal Code",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I select Continue",
+            "match": {
+              "location": "steps/purchase.steps.ts:17"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I select Finish",
+            "match": {
+              "location": "steps/purchase.steps.ts:21"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I validate the text 'Thank you for your order!'",
+            "match": {
+              "location": "steps/purchase.steps.ts:25"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 103886916
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "purchase-feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Purchase Feature",
+    "tags": [],
+    "uri": "features/purchase.feature"
+  }
+]
